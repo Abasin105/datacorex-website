@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050b18">
+<meta name="description" content="Data Corex Solutions LLC — data center deployment, fiber optics, server installation, networking and technical support.">
+<title>Data Corex Solutions LLC | Future-Ready IT Infrastructure</title>
+<style>
+:root{--bg:#050b18;--panel:#0a1428;--cyan:#00c8ff;--blue:#176bff;--green:#35f08b;--white:#f3f7ff;--muted:#a8b7ce;--line:rgba(80,190,255,.22)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 10%,rgba(0,132,255,.16),transparent 38%),radial-gradient(ellipse at 85% 40%,rgba(0,255,150,.08),transparent 35%),linear-gradient(rgba(10,30,58,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(10,30,58,.22) 1px,transparent 1px);background-size:auto,auto,48px 48px,48px 48px}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(5,11,24,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}
+.logo{width:42px;height:42px;border:2px solid var(--cyan);border-radius:13px;display:grid;place-items:center;color:var(--green);font-weight:950;font-size:24px;box-shadow:0 0 22px #00c8ff25;transform:rotate(-3deg)}
+.brand small{display:block;font-size:10px;letter-spacing:.23em;color:var(--muted);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:28px;color:#d7e5f7;font-size:14px}
+.nav-links a:hover{color:var(--green)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;background:linear-gradient(110deg,var(--blue),#00a9d9 65%,#13cb83);font-weight:800;color:#03101c;box-shadow:0 0 25px #00bfff22;transition:transform .2s,filter .2s}
+.btn:hover,.nav-cta:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 12px;border-radius:8px;font-size:20px}
+.hero{min-height:680px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:50px;padding:82px 0 92px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--green);font-size:12px;letter-spacing:.2em;font-weight:850;text-transform:uppercase}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.04;letter-spacing:-.055em;margin:22px 0}
+.gradient{background:linear-gradient(100deg,#fff 10%,var(--cyan) 52%,var(--green));color:transparent;background-clip:text}
+.hero p{max-width:590px;color:var(--muted);font-size:17px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn.secondary{background:transparent;color:var(--white);border:1px solid rgba(0,200,255,.5);box-shadow:none}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;color:#c6d5e9;font-size:12px;letter-spacing:.08em}
+.trust span:before{content:"✓";color:var(--green);margin-right:8px}
+.visual{position:relative;min-height:430px;display:grid;place-items:center}
+.orb{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;border:1px solid #00c8ff65;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 40%,#0c2b4e 0%,#071426 53%,#050b18 70%);box-shadow:inset 0 0 65px #007bff22,0 0 65px #008cff15;animation:float 6s ease-in-out infinite}
+.orb:before,.orb:after{content:"";position:absolute;inset:20px;border:1px dashed #00c8ff65;border-radius:50%;animation:spin 28s linear infinite}
+.orb:after{inset:48px;border-style:solid;border-color:#35f08b40;animation-direction:reverse;animation-duration:22s}
+.core-mark{font-size:118px;font-weight:950;line-height:1;color:#fff;text-shadow:0 0 25px #00bfff,0 0 70px #00a6ff70;z-index:2}
+.core-mark span{color:var(--green)}
+.float-card{position:absolute;background:rgba(9,22,42,.9);border:1px solid var(--line);border-radius:12px;padding:14px 17px;box-shadow:0 12px 38px #0007;backdrop-filter:blur(12px)}
+.float-card b{display:block;font-size:13px}.float-card small{color:var(--muted);font-size:11px}
+.card-a{top:42px;right:-5px}.card-b{bottom:55px;left:-10px}.tiny-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-right:7px}
+section{padding:82px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.15;margin:14px 0}
+.section-head p{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.service{padding:25px 22px;background:linear-gradient(145deg,rgba(12,28,52,.92),rgba(6,14,29,.92));border:1px solid var(--line);border-radius:15px;min-height:225px;transition:transform .25s,border-color .25s}
+.service:hover{transform:translateY(-6px);border-color:#00c8ff90}
+.service-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:12px;background:#00c8ff12;border:1px solid #00c8ff65;color:var(--cyan);font-size:24px;margin-bottom:20px}
+.service h3{font-size:17px;margin-bottom:10px;line-height:1.3}
+.service p{font-size:13px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-panel{padding:30px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0a1a30,#07101e)}
+.about-panel h3{font-size:25px;margin-bottom:12px}
+.about-panel p{color:var(--muted)}
+.check-list{display:grid;gap:14px;margin-top:22px}
+.check-list li{list-style:none;display:flex;gap:12px;color:#dce7f7}
+.check-list li:before{content:"✓";color:var(--green);font-weight:900}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.stat{padding:18px;border:1px solid var(--line);border-radius:12px;background:#071326;text-align:center}
+.stat b{display:block;font-size:21px;color:var(--cyan)}.stat span{font-size:11px;color:var(--muted)}
+.contact-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px}
+.contact-info,.contact-form{border:1px solid var(--line);background:rgba(8,20,38,.85);border-radius:16px;padding:30px}
+.contact-info h3,.contact-form h3{font-size:24px;margin-bottom:12px}
+.contact-info>p{color:var(--muted);margin-bottom:25px}
+.contact-line{margin:19px 0}.contact-line small{display:block;color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:850}.contact-line a,.contact-line strong{overflow-wrap:anywhere}
+form{display:grid;gap:14px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:12px;color:#c6d5e9;display:grid;gap:7px}
+input,textarea,select{width:100%;border:1px solid #29415e;background:#050d1a;color:#fff;border-radius:8px;padding:12px;font:inherit;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #00c8ff18}
+textarea{min-height:120px;resize:vertical}
+.form-note{font-size:11px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:65px;gap:15px}.visual{min-height:400px}.services{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-wrap{grid-template-columns:1fr}.card-a{right:5%}.card-b{left:5%}}
+@media(max-width:650px){.container{width:min(100% - 28px,1160px)}.nav-inner{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#07101f;padding:22px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.nav-cta{display:none}.hero{padding:55px 0 35px;min-height:auto}.hero p{font-size:15px}.visual{min-height:330px}.orb{width:280px}.core-mark{font-size:90px}.float-card{padding:10px 12px}.card-a{top:15px}.card-b{bottom:18px}section{padding:60px 0}.services{grid-template-columns:1fr}.service{min-height:auto}.field-row{grid-template-columns:1fr}.contact-info,.contact-form{padding:22px}.stats{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="Data Corex home"><span class="logo">D<span style="color:#35f08b">X</span></span><span>DATA COREX<small>SOLUTIONS LLC</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="navLinks"><a href="#services" onclick="closeMenu()">Services</a><a href="#about" onclick="closeMenu()">About</a><a href="#contact" onclick="closeMenu()">Contact</a></div>
+    <a class="nav-cta" href="#contact">LET'S CONNECT ↗</a>
+  </div>
+</nav>
+<main>
+  <section class="container hero" id="home">
+    <div>
+      <div class="eyebrow"><span class="pulse"></span> IT INFRASTRUCTURE • NETWORKS • DATA CENTERS</div>
+      <h1>Build the <span class="gradient">infrastructure</span> of tomorrow.</h1>
+      <p>Reliable technical services for modern IT environments—from data center deployment and structured cabling to server installation and infrastructure support.</p>
+      <div class="hero-actions"><a class="btn" href="#contact">Discuss Your Project ↗</a><a class="btn secondary" href="#services">Explore Services ↓</a></div>
+      <div class="trust"><span>Deployment Support</span><span>Network Infrastructure</span><span>Technical Services</span></div>
+    </div>
+    <div class="visual" aria-label="Futuristic Data Corex technology graphic">
+      <div class="orb"><div class="core-mark">D<span>X</span></div></div>
+      <div class="float-card card-a"><b><span class="tiny-dot"></span>INFRASTRUCTURE READY</b><small>Connected. Organized. Supported.</small></div>
+      <div class="float-card card-b"><b>DATA CENTER SERVICES</b><small>From installation to ongoing support</small></div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">WHAT WE DO</div><h2>Technology services built for <span class="gradient">real-world demands.</span></h2><p>Practical technical support to help teams deploy, connect, and maintain their IT infrastructure.</p></div>
+      <div class="services">
+        <article class="service"><div class="service-icon">▤</div><h3>Data Center Installation & Deployment</h3><p>Staging and deployment support for data center environments and technical projects.</p></article>
+        <article class="service"><div class="service-icon">⌁</div><h3>Structured Cabling & Fiber Optics</h3><p>Copper and fiber installation, patching, cable management, and labeling.</p></article>
+        <article class="service"><div class="service-icon">▥</div><h3>Server, Rack & Hardware Installation</h3><p>Rack and hardware installation, equipment moves, upgrades, and changes.</p></article>
+        <article class="service"><div class="service-icon">⌘</div><h3>Technical & Infrastructure Support</h3><p>Troubleshooting, preventive maintenance, networking, and site support.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container about-grid">
+      <div><div class="eyebrow">WHY DATA COREX</div><h2 style="font-size:clamp(32px,4vw,48px);line-height:1.15;margin:16px 0">A dependable partner for your <span class="gradient">technical projects.</span></h2><p style="color:var(--muted)">We focus on careful installation, organized infrastructure, and responsive technical support to help keep technology projects moving.</p><div class="hero-actions"><a class="btn" href="#contact">Start a Conversation ↗</a></div></div>
+      <div class="about-panel"><h3>Reliable. Secure. Solutions.</h3><p>Support for the physical and technical foundations that keep businesses connected.</p><ul class="check-list"><li>Data center staging and deployment</li><li>Clear cable management and labeling</li><li>Hardware installation and upgrades</li><li>Troubleshooting and site support</li></ul><div class="stats"><div class="stat"><b>IT</b><span>Infrastructure</span></div><div class="stat"><b>DC</b><span>Data Centers</span></div><div class="stat"><b>24/7*</b><span>Project-focused support</span></div></div><p style="font-size:10px;margin-top:10px">*Availability depends on project arrangements.</p></div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">CONTACT DATA COREX</div><h2>Have a project in mind?</h2><p>Reach out to discuss your infrastructure needs and project requirements.</p></div>
+      <div class="contact-wrap">
+        <div class="contact-info"><h3>Let's connect.</h3><p>Contact us directly or use the message form to prepare an inquiry.</p>
+          <div class="contact-line"><small>Email</small><a href="mailto:Datacorex3@gmail.com">Datacorex3@gmail.com</a></div>
+          <div class="contact-line"><small>Phone</small><a href="tel:+15716844756">571-684-4756</a></div>
+          <div class="contact-line"><small>Location</small><strong>4600 Duke St, #1103<br>Alexandria, VA 22304</strong></div>
+        </div>
+        <div class="contact-form"><h3>Send a project inquiry</h3>
+          <form id="contactForm">
+            <div class="field-row"><label>Your name<input name="name" autocomplete="name" placeholder="Name" required></label><label>Company<input name="company" autocomplete="organization" placeholder="Company (optional)"></label></div>
+            <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@company.com" required></label>
+            <label>What do you need help with?
+              <select name="service"><option>Data center installation & deployment</option><option>Structured cabling & fiber optics</option><option>Server, rack & hardware installation</option><option>Technical support & troubleshooting</option><option>Other project</option></select>
+            </label>
+            <label>Project details<textarea name="message" placeholder="Tell us a little about your project..." required></textarea></label>
+            <button class="btn" type="submit">Prepare Email ↗</button>
+            <p class="form-note">This opens your email app with the inquiry filled in; it does not send automatically.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Data Corex Solutions LLC. All rights reserved.</span><span>RELIABLE <span style="color:var(--cyan)">/</span> SECURE <span style="color:var(--green)">/</span> SOLUTIONS</span></div></footer>
+<script>
+function toggleMenu(){const menu=document.getElementById('navLinks');const btn=document.querySelector('.menu-toggle');const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',String(open))}
+function closeMenu(){document.getElementById('navLinks').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false')}
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const subject=encodeURIComponent('Project Inquiry — Data Corex Solutions LLC');const body=encodeURIComponent('Name: '+d.get('name')+'\nCompany: '+(d.get('company')||'Not provided')+'\nEmail: '+d.get('email')+'\nService: '+d.get('service')+'\n\nProject details:\n'+d.get('message'));window.location.href='mailto:Datacorex3@gmail.com?subject='+subject+'&body='+body;});
+</script>
+</body>
+</html>
